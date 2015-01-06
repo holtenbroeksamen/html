@@ -4,13 +4,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="robin.css"/>
+<link rel="stylesheet" type="text/css" href="css/robin.css"/>
 <link rel="stylesheet" type="text/css" href="css/tom.css"/>
 <link rel="stylesheet" type="text/css" href="css/corne.css"/>
 <link rel="stylesheet" type="text/css" href="css/enzio.css"/>
 <link rel="stylesheet" type="text/css" href="css/nadia.css"/>
 <link rel="stylesheet" type="text/css" href="css/justin.css"/>
 <link rel="stylesheet" type="text/css" href="css/eyob.css"/>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
 <title>Samen Holtenbroek</title>
 
 
@@ -35,11 +36,11 @@
 			<div class="nav">
 
 				<ul> 
-					<li>Nieuws</li>
-					<li>Agenda</li>
-					<li>Plein</li>
-					<li>initiatieven</li>
-					<li>Discussies</li>
+					<li><a href="#">Nieuws</a></li>
+					<li><a href="#">Agenda</a></li>
+					<li><a href="#">Plein</a></li>
+					<li><a href="#">initiatieven</a></li>
+					<li><a href="#">Discussies</a></li>
 
 				</ul>
 			</div>
@@ -62,7 +63,7 @@
 
 
 					<div class="notification_icon">
-						<img alt="notification_icon"src=""/>
+						<img alt="notification_icon"src="img/bel.png"/>
 					</div>
 
 					<div class="notification_number">
@@ -76,19 +77,29 @@
 	<!--Start banner !-->
 	<div id="banner">
 
-		<img alt="banner" src="" /> 
+		<img alt="banner" src="img/park.jpg" /> 
 
 	</div> 
 
+
+<div id="sub_wrapper">
+
 	<!--Start categorie!-->
+
+
+
+
+
 	<div class="category">
 
 		<div class="items">
 
-			<a class="items_cat" class="item_vraag" href="#"><h1>Ik heb een vraag</h1></a>
-			<a class="items_cat" class="item_discussie" href="#"><h1>Een discussie starten</h1></a>
-			<a class="items_cat" class="item_initiatief" href="#"><h1>Een initiatief</h1></a>
-			<a class="items_cat" class="item_aanmelden" href="#"><h1>Holtenbroek</h1></a> </br><p>Hier content </p><a class="btn_aanmelden" href="#">Aanmelden!</a>
+			<div class="items_cat" id="item_vraag" href="#">   <span> <h1>Ik heb een vraag</h1></span> </div>
+			<div class="items_cat" id="item_discussie" href="#"> <span> <h2>Een discussie starten </h2> </span> </div>
+			<div class="items_cat" id="item_initiatief" href="#"> <span> <h3>Een initatief melden</h3> </span></div>
+			<div class="items_cat" id="item_aanmelden" href="#">  <h4>Holtenbroek</h4> <p> test
+           </p><a class="btn_aanmelden" href="#">Maak een account</a> </div>
+           
 
 
 		</div>
@@ -99,16 +110,30 @@
 
 <!--Start nieuws uit de buurt-->
 
-	<div class="nieuws_buurt">
+	<div class="nieuws_buurt"> 
 
-		<div class="subject"><h1>Nieuws uit de buurt</h1></div>
+		<div class="subject"><h1>Nieuws uit de buurt</h1>
+        </div>
 
-			<div class="nieuws_cat" class="nieuws_cat1" href="#"><h1>Onderwerp</h1><p>tekst</p><a class="btn_leesmeer" href="#">lees meer</a></div>
-			<div class="nieuws_cat" class="nieuws_cat2" href="#"><h1>Onderwerp</h1><p>tekst</p><a class="btn_leesmeer" href="#">lees meer</a></div>
-			<div class="nieuws_cat" class="nieuws_cat3" href="#"><h1>Onderwerp</h1><p>tekst</p><a class="btn_leesmeer" href="#">lees meer</a></div>
+			<div class="nieuws_cat" id="nieuws_cat1" href="#">
+            <h1>Bestuursleden gezocht</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- </br>
+            mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </br>
+             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip </p><a class="btn_leesmeer" href="#">lees meer</a></div>
+            
+			<div class="nieuws_cat" id="nieuws_cat2" href="#"><h1>Vernieuwde park</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- </br>
+            mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </br>
+             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><a class="btn_leesmeer" href="#">lees meer</a></div>
+
+			<div class="nieuws_cat" id="nieuws_cat3" href="#"><h1>Vrijwilligers maken de buurt schoon</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius- </br>
+            mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </br>
+             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p><a class="btn_leesmeer" href="#">lees meer</a>
+            </div>
 			
 
-	</div>
+</div>
+</div>
+
+
 
 
 	<!-- Start Maak uw keuze submenu -->
@@ -156,9 +181,10 @@
 
 
 
-
 <!-- einde wrapper -->
 
+
+	</div>
 </div>
 
 
